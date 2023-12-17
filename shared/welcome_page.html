@@ -1,0 +1,192 @@
+<?php
+include_once "logout.php";
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>WELCOME</title>
+<style>
+    .screen-container{
+        position: relative;
+        height: 100%;
+    }
+    .blocks{
+        box-sizing: border-box;
+        height: 70px;
+        display: flex;
+        background-color: rgba(0, 0, 255, 0.603);
+    }
+    .logo_inner{
+        box-sizing: border-box;
+        height: 50px;
+        display: flex;
+        max-width: 500px;
+        margin: 15px;
+        padding: 5px;
+        background-color: transparent;
+    }
+    img{
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+        background-color: transparent;
+    }
+    .content
+    {
+        padding: 5px;
+        color: lightyellow;
+        font-size: larger;
+    }
+    .side_buttons{
+        display: flex;
+        background-color: transparent;
+        margin-left: 45%;
+    }
+    .home{
+        width: 80px;
+        background-color: transparent;
+        
+    }
+    button{
+        width: 70px;
+        height: 35px;
+        background-color:goldenrod;
+        color: white;
+        cursor: pointer;
+    }
+    .box1{
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .bg_img{
+        height: 500px;
+        background: url(https://assets.thehansindia.com/h-upload/2019/12/17/246070-anna.webp) repeat;
+        justify-content: center;
+        border: 1px solid lightgrey;
+    }
+    .parent{
+        border: 1px solid lightgray;
+        height: 500px;
+        background-color: white;
+        opacity: 0.6;
+        
+    }
+    .website_name{
+        margin-top: 200px;
+        font-weight: bolder;
+        font-size: 3em; 
+        color: black;
+    }
+    .quote{
+        font-size:large;
+        font-weight: 10em;
+        margin-left: 520px;
+        color: black solid;
+    }
+    .buttons{
+        box-sizing: border-box;
+        display: inline-block;
+        margin-top: 5%;
+        margin-left: 30%;
+        padding: 10px;
+    }
+    .admin_box,.applicant_box{
+        display: inline-block;
+        min-height: 200px;
+        min-width: 200px;
+        border: thin solid;
+        background-color: bisque;
+        opacity: 0.4;
+        font-size: 20px; 
+        
+    }
+    .admin_box:hover{
+        opacity: 1.5;
+    }
+    .applicant_box:hover{
+        opacity: 1.5;
+    }
+    .admin_button{
+        margin: 30%;
+    }
+    .applicant_button{
+        margin: 20%;
+        margin-top: 30%;
+    }
+    .footer{
+        margin-top: 100px;
+        height: 100px;
+        background-color: rgba(0, 0, 255, 0.603);
+        display: block;
+        
+    }
+    img{
+            width: 25px;
+            height: 20px;
+            padding-right: 8px;
+        }
+    .img1{
+        margin-left: 40%;
+        margin-top: 1%;  
+    }
+    .footer_msg{
+        margin-left: 41%; 
+        margin-top: 5%; 
+        padding-top: 25px;
+    }
+        
+</style>
+</head>
+<body style="background-color: lightyellow;"> 
+    <div class="screen-container">
+
+        <div class="blocks">
+            <div class="logo_inner">
+                <img src="images/download3.png"> 
+                <div class="content">CAMPUS PLACEMENT / INTERNSHIPS</div>
+            </div>
+            <div class="side_buttons">
+                <a href="welcome_page.html" class="home">
+                    <button class="applicant_button">home</button></a>
+                <div class="home" >
+                    <button onclick="scrollWin()" class="applicant_button">About</button>
+                </div>
+                <a href="login.html" class="home">
+                    <button class="applicant_button">login</button>
+                </a>
+            </div>
+        </div>
+        
+        <div class="box1">
+            <div class="bg_img">
+                <div class="parent">
+                    <div class="website_name"> WELCOME TO ANNA UNIV.INTERNSHIPS</div>
+                    <div class="quote"><i> an available opportunity must be known</i></div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h1 style="color: brown;">INTERNSHIPS</h1>
+            <h3>
+                CUIC facilitates internships ( with stipend) for the UG / PG students of the University Departments: 6 months internships for UG / PG students in their final semesters & summer internships for pre-final UG students. On the successful completion of the internship, the internship offer may get converted into a full time offer (pre-placement offer (PPO)), if the industry desires so.
+            </h3>
+            <h1 style="color: brown;">PLACEMENTS</h1>
+            <h3>
+                CUIC is committed to facilitate placement opportunities for final year UG/PG students of the University Departments (College of Engineering, Guindy (CEG), Madras Institute of Technology, Chrompet (MIT)/ Alagappa College of Technology (ACT) / School of Architecture and Planning (SAP))
+            </h3>
+        </div>
+        <div class="footer">
+            <div class="footer_msg">Follow us on</div>
+            <a href=""><img class="img1" src="images/download.png"></a>
+            <a href=""><img src="images/download2.jpeg" ></a>
+            <a href="welcome_page.html"><img src="images/download3.png"></a>
+        </div>
+    </div>
+    <script>
+        function scrollWin() {
+            window.scrollBy(0, 250);
+        }
+    </script>
+</body>
+</html>
